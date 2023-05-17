@@ -1,6 +1,6 @@
-import assert from 'node:assert/strict'
-import test from 'node:test'
-import {nGram} from './index.js'
+const assert = require('node:assert/strict')
+const test = require('node:test')
+const {nGram} = require('./index.js')
 
 test('nGram (main)', function () {
   assert.throws(

@@ -1,12 +1,12 @@
-export const bigram = nGram(2)
-export const trigram = nGram(3)
+const bigram = nGram(2)
+const trigram = nGram(3)
 
 /**
  * Factory returning a function that converts a value string to n-grams.
  *
  * @param {number} n
  */
-export function nGram(n) {
+function nGram(n) {
   if (
     typeof n !== 'number' ||
     Number.isNaN(n) ||
@@ -47,4 +47,8 @@ export function nGram(n) {
 
     return nGrams
   }
+}
+
+module.exports = {
+  bigram, trigram, nGram
 }
